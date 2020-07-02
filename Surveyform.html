@@ -1,0 +1,78 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+Hello Camper!
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+- The freeCodeCamp Team 
+-->
+<head>
+  <title>A survey form - Project</title>
+</head>
+
+<body>
+  <header>
+    <section class="title-text">
+      <h1 id="title">Survey Form</h1>
+      <p id="description" class="title-text"><em style="font-size: 90%;">Let us know how we can improve </em></p>
+    </section>
+  </header>
+  
+  <main>
+    <form id="survey-form">
+      <section id="survey-fields">
+        <!-- identification fields -->
+        <label for="name" id="name-label">* Name:</label>
+        <input id="name" type="text" placeholder="Enter Your Name" required>
+        <label for="Email" id="email-label">* Email:</label>
+        <input id="email" type="email" placeholder="Enter Your Email" required>
+        <label for="number" id="number-label">* Age:</label>
+        <input id="number" type="number" placeholder="Enter Your Age" min=10 max=100 required>
+        <label for="universityname" id="univesity">* College/University :</label>
+        <input id="universityname" type="text" Placeholder="Enter Your College/University Name" required>
+        <label for="country" id="countryn">*Country :</label>
+        <input id="country" type="text" placeholder="Country " required>
+        <!-- Which option best describes your current role -->
+        <label for="dropdown1">Which option best describes your current role?</label>
+        <select id="dropdown1" form="survey-form">
+          <option value="" disabled selected>Select an option</option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full time job</option>
+          <option value="full-time-learner">Full time learner</option>
+          <option value="Part-time-job">Part time Job</option>
+          <option value="prefer-not">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+       
+        <!-- How likely is that you would recommend freeCodeCamp to a friend -->
+        <label for="recommendation">* How likely is that you would recommend our website to a friend?</label>
+        <fieldset id="recommendation">
+          <label for="r_definitely"><input type="radio" name="recommend" id="r_definitely" value="definitely" required>Definitely</label>
+          <label for="r_maybe"><input type="radio" name="recommend" id="r_maybe" value="maybe" required>Maybe</label>
+          <label for="r_not_sure"><input type="radio" name="recommend" id="r_not_sure" value="notsure" required>Not sure</label>
+        </fieldset>
+        
+        <!-- What do you like most in FCC -->
+        <label for="likethemost">Which Service do you like in our Website:</label>
+        <select id="likethemost">
+          <option value="" disabled selected>select an option</option>
+          <option value="Website-service">Web Service</option>
+          <option value="mobileappservice">Mobile Application Service</option>
+          <option value="audio-video">Audio-Video Services</option>
+          <option value="Social-media-marketing">Social Media Marketing</option>
+          <option value="overall-service">Overall Service</option>   
+        </select>
+      
+        <!-- Things that should be improved in the future -->
+        
+        <label for="review">Review </label>
+       <textarea style="height:100px;resize:vertical;" id="comments" placeholder="Enter Your Review" required></textarea>
+          <label for="comments">Any Comments or Suggestions?</label>
+        <textarea style="height:80px;resize:vertical;" id="comments" placeholder="Enter a comment"></textarea>
+      </section>
+
+      <!-- submit -->
+      <button id="submit">Submit</button>
+    </form>
+  </main>
+ 
+</body>
